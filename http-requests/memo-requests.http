@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/memo
+Content-Type: application/json
+
+{
+  "title": "title",
+  "body": "body",
+  "ownerId": 1
+}
+
+###
+
+GET http://localhost:8080/api/memo?accountId=1
+
+###
+
+DELETE http://localhost:8080/api/memo?memoId=34
+
+###
+
+PUT http://localhost:8080/api/memo
+Content-Type: application/json
+
+{
+  "id": 36,
+  "title": "new title",
+  "body": "new body",
+  "finished": true
+}
+
+###
